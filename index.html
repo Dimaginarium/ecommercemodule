@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img class="icon-menu hidden" src="images/icon-menu.svg" alt="">
+      <img src="images/logo.svg" alt="logo">
+      <ul class="menu">
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      <div class="mobile-menu hidden">
+        <ul>
+          <img class="close-menu " src="images/icon-close.svg" alt="">
+          <img id="profile-pic-menu" class="hidden" src="images/image-avatar.png" alt="">
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+
+      <div class="cart-modal hidden">
+        <h4>Cart</h4>
+        <ion-icon id="trash" name="trash-outline"></ion-icon>
+        <div class="cart-empty centered">Your cart is empty</div>
+        <div class="cart-full">
+          <img src="images/image-product-1-thumbnail.jpg" alt="">
+          <p>
+            Fall Limited Edition Sneakers
+            <br>
+            $125 x <span class="cart-counter">0</span>
+          </p>
+        </div>
+      </div>
+      <div class="cart-profile centered">
+        <div class="cart-icon">
+          <img src="images/icon-cart.svg" alt="cart">
+          <div class="item-counter">0</div>
+        </div>
+        <img id="profile-pic" src="images/image-avatar.png" alt="">
+
+      </div>
+    </header>
+    <hr>
+    <div class="main centered">
+      <div class="slider">
+
+        <div class="btn-div">
+          <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1" checked>
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <img class="product-img first" src="images/image-product-1.jpg" alt="">
+            <img class="product-img" src="images/image-product-2.jpg" alt="">
+            <img class="product-img" src="images/image-product-3.jpg" alt="">
+            <img class="product-img" src="images/image-product-4.jpg" alt="">
+          </div>
+          <div class="centered carousel-btn carousel-btn-next">&#11166;</div>
+          <div class="centered carousel-btn carousel-btn-prev">&#11164;</div>
+        </div>
+        <div class="selector-img">
+          <label for="radio1"><img class="img-thumbnail" src="images/image-product-1-thumbnail.jpg" alt=""></label>
+          <label for="radio2"><img class="img-thumbnail" src="images/image-product-2-thumbnail.jpg" alt=""></label>
+          <label for="radio3"><img class="img-thumbnail" src="images/image-product-3-thumbnail.jpg" alt=""></label>
+          <label for="radio4"><img class="img-thumbnail" src="images/image-product-4-thumbnail.jpg" alt=""></label>
+        </div>
+      </div>
+      <div class="info-text">
+        <span>SNEAKER COMPANY</span>
+        <h1>Fall Limited <br> Sneakers</h1> <br>
+        <p>These low profile sneakers are your perfect casual wear companion. Featuring a double rubebr outer
+          sole,they'll withstand everything the weather can offer.</p><br>
+        <div class="pricetag">
+          <h2>$125.00</h2>
+          <div class="sale">50%</div>
+        </div>
+        <s>$250.00.</s>
+        <div class="buy-it">
+          <div class="buy-counter">
+            <div class="input-group-button">
+              <span class="input-number-decrement">-</span>
+            </div>
+            <input id="input-number" class="input-number" type="number" value="0" min="0" max="1000">
+            <div class="input-group-button">
+              <span class="input-number-increment">+</span>
+            </div>
+          </div>
+          <button id="btn-cart" class="centered">
+            <ion-icon name="cart-outline"></ion-icon>Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
